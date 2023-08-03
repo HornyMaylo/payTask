@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto&display=swap');
+
+@import "null.scss";
+
+$pop: "Poppins";
+$robo: "Roboto";
+$dark: #070707;
+$sizeindex: calc(1vw + 1vh);
+$transition: .75s cubic-bezier(.2, .6, 0, 1);
+
+@mixin textStyle($family, $size, $weight, $line-height, $color) {
+   font-family: $family;
+   font-size: $size;
+   font-weight: $weight;
+   line-height: $line-height;
+   color: $color;
+}
+
+
+.container {
+   max-width: 90%;
+   margin: 0 auto;
+}
