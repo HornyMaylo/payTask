@@ -433,6 +433,8 @@ header .header__wrapper .header__item .nonActive {
 
 .slider {
   margin-top: 8%;
+  margin-bottom: 15%;
+  margin: 8% 0 15%;
 }
 .slider h1 {
   font-family: "Inter";
@@ -493,9 +495,6 @@ header .header__wrapper .header__item .nonActive {
   width: 75%;
 }
 
-footer {
-  margin-top: 15%;
-}
 footer .requisites {
   width: 100%;
   background-color: #222930;
@@ -709,4 +708,102 @@ footer .social .social__row:last-child .links a {
 }
 .form form .signWith .signWith__links a img {
   margin-right: 8%;
+}
+
+.dashboard {
+  margin: 5% 0 7%;
+  overflow: hidden;
+}
+.dashboard .slider {
+  width: 80%;
+  margin: 0 auto;
+}
+.dashboard .slider h1 {
+  font-family: "Inter";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.09px;
+  color: #000;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.dashboard .slider .image-slider {
+  padding: 30px 0 70px 0;
+  position: relative;
+}
+.dashboard .slider .image-slider .next {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+.dashboard .slider .image-slider .prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+.dashboard .slider .image-slider .image-slider__wrapper .image-slider__slide .image-slider__image {
+  text-align: center;
+}
+.dashboard .slider .image-slider .image-slider__wrapper .image-slider__slide .image-slider__image img {
+  max-width: 100%;
+}
+.dashboard .dashboard__tasks {
+  width: 41%;
+  margin: 0 auto;
+}
+.dashboard .dashboard__tasks h2 {
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.73px;
+  color: #3F3F3F;
+  text-align: center;
+}
+.dashboard .dashboard__tasks .tasks__body {
+  display: flex;
+  width: 80%;
+  margin: 5% auto;
+}
+.dashboard .dashboard__tasks .tasks__body p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  color: #3F3F3F;
+  width: 43%;
+}
+.dashboard .dashboard__tasks .tasks__body ul {
+  width: 40%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard .dashboard__tasks .tasks__body ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.dashboard .dashboard__tasks .tasks__body ul li span {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  color: #3F3F3F;
+  margin-left: 5%;
+  text-align: left;
+}
+.dashboard .dashboard__tasks span {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  color: #3F3F3F;
+  text-align: center;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
 }
