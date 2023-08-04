@@ -108,6 +108,9 @@ header .header__wrapper .header__item:last-child {
 header .header__wrapper .registration {
   justify-content: flex-end;
 }
+header .header__wrapper .header__item:last-child {
+  justify-content: flex-end;
+}
 header .header__wrapper .header__item {
   width: 55%;
   display: flex;
@@ -942,4 +945,158 @@ footer .social .social__row:last-child .links a {
   color: #fff;
   padding: 1.2% 1%;
   width: 14%;
+}
+
+.blog {
+  margin: 5% 0;
+}
+.blog h1 {
+  font-family: "Inter";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.09px;
+  color: #3F3F3F;
+  text-align: center;
+  margin-bottom: 1.5%;
+}
+.blog .blog__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog .blog__wrapper .blog__item {
+  width: 32.5%;
+  margin-bottom: 2.6%;
+}
+.blog .blog__wrapper .blog__item .blog__preview {
+  width: 100%;
+  height: 45%;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+.blog .blog__wrapper .blog__item .blog__preview img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.blog .blog__wrapper .blog__item .blog__content {
+  width: 100%;
+  padding: 4%;
+  border-bottom: 1px solid #3F3F3F;
+}
+.blog .blog__wrapper .blog__item .blog__content .blog__subtitle {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.52px;
+  color: #2BB9FD;
+}
+.blog .blog__wrapper .blog__item .blog__content .blog__title {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: #000;
+  margin: 3% 0;
+  width: 80%;
+}
+.blog .blog__wrapper .blog__item .blog__content .blog__description {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  color: #000;
+  width: 84%;
+}
+.blog .blog__wrapper .blog__item a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4%;
+}
+.blog .blog__wrapper .blog__item a span {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.52px;
+  color: #000;
+}
+
+.openBlog {
+  width: 70%;
+  margin: 5% auto;
+}
+.openBlog .openBlog__content {
+  width: 100%;
+}
+.openBlog .openBlog__content .openBlog__info {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #000;
+  text-transform: uppercase;
+}
+.openBlog .openBlog__content .openBlog__info span {
+  display: flex;
+  align-items: center;
+}
+.openBlog .openBlog__content .openBlog__info span a {
+  color: #2BB9FD;
+  margin: 0 0.4%;
+}
+.openBlog .openBlog__content .openBlog__title {
+  font-family: "Inter";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #000;
+  margin: 1% 0;
+  width: 80%;
+}
+.openBlog .openBlog__content .openBlog__subTitle {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #B6B6B6;
+  width: 82%;
+}
+.openBlog .openBlog__content img {
+  border-radius: 16px;
+  margin: 4% 0;
+}
+.openBlog .openBlog__content .openBlog__text {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #000;
+}
+.openBlog .openBlog__content .openBlog__text p {
+  margin-bottom: 2%;
+  width: 85%;
+}
+.openBlog .openBlog__content .openBlog__text h3 {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  color: #000;
+  margin-top: 7%;
+  margin-bottom: 3%;
+}
+.openBlog .openBlog__content .openBlog__text ul {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+.openBlog .openBlog__content .openBlog__text ul li {
+  width: 85%;
+  list-style-type: disc;
+  color: #000;
+}
+.openBlog .openBlog__content .openBlog__text ul li span {
+  font-weight: 600;
 }
