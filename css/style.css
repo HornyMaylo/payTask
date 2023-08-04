@@ -807,3 +807,139 @@ footer .social .social__row:last-child .links a {
   display: block;
   margin: 0 auto;
 }
+
+.rates {
+  margin-top: 5%;
+  margin-bottom: 7%;
+}
+.rates .rates__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.rates .rates__header h1 {
+  font-family: "Inter";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.09px;
+  color: #3F3F3F;
+  text-align: center;
+}
+.rates .rates__header p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  color: #3F3F3F;
+  text-align: center;
+  margin: 3% 0;
+  width: 50%;
+}
+.rates .rates__body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4%;
+}
+.rates .rates__body .rates__item:first-child .rates__saving {
+  opacity: 0;
+}
+.rates .rates__body .rates__item {
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px 1.5px rgba(0, 0, 0, 0.2509803922);
+  padding: 4% 2%;
+  width: 32%;
+}
+.rates .rates__body .rates__item h5 {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  color: #000;
+  margin-bottom: 3%;
+}
+.rates .rates__body .rates__item .rates__price {
+  display: flex;
+}
+.rates .rates__body .rates__item .rates__price h4 {
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.73px;
+  color: #000;
+}
+.rates .rates__body .rates__item .rates__price span {
+  margin-top: 2%;
+  margin-left: 3%;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.05px;
+  color: #000;
+}
+.rates .rates__body .rates__item .rates__saving {
+  display: flex;
+  align-items: center;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: #2BB9FD;
+  margin: 3% 0;
+}
+.rates .rates__body .rates__item .rates__saving span {
+  margin-left: 3%;
+}
+.rates .rates__body .rates__item .rates__conditions {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  color: #3F3F3F;
+}
+.rates .rates__body .rates__item ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+}
+.rates .rates__body .rates__item ul li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  width: 80%;
+}
+.rates .rates__body .rates__item ul li .tesis {
+  display: flex;
+  align-items: center;
+}
+.rates .rates__body .rates__item ul li .tesis img {
+  margin-right: 3%;
+}
+.rates .rates__body .rates__item ul li .tesis p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  color: #3F3F3F;
+}
+.rates .rates__body .rates__item ul li .subcondition {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  color: #C1BABA;
+  margin-left: 7%;
+  margin-top: 3%;
+}
+.rates button {
+  display: block;
+  margin: 0 auto;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.78px;
+  color: #fff;
+  padding: 1.2% 1%;
+  width: 14%;
+}

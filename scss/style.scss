@@ -658,4 +658,107 @@ footer {
 
 // Rates  page
 
-// Form
+// Rates
+
+.rates {
+   margin-top: 5%;
+   margin-bottom: 7%;
+   & .rates__header {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      & h1 {
+         @include textStyle($in, 48px, 600, 58.09px, #3F3F3F);
+         text-align: center;
+      }
+      & p {
+         @include textStyle($in, 16px, 400, 19.36px, #3F3F3F);
+         text-align: center;
+         margin: 3% 0;
+         width: 50%;
+      }
+   }
+   & .rates__body {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 4%;
+      & .rates__item:first-child {
+         & .rates__saving {
+            opacity: 0;
+         }
+      }
+      & .rates__item {
+         border-radius: 12px;
+         box-shadow: 0px 0px 4px 1.5px #00000040;
+         padding: 4% 2%;
+         width: 32%;
+         & h5 {
+            @include textStyle($in, 18px, 600, 21.78px, #000);
+            margin-bottom: 3%;
+         }
+         & .rates__price {
+            display: flex;
+            & h4 {
+               @include textStyle($in, 32px, 500, 38.73px, #000);
+            }
+            & span {
+               margin-top: 2%;
+               margin-left: 3%;
+               @include textStyle($in, 24px, 500, 29.05px, #000);
+            }
+         }
+         & .rates__saving {
+            display: flex;
+            align-items: center;
+            @include textStyle($in, 16px, 500, 19.36px, #2BB9FD);
+            margin: 3% 0;
+            & span {
+               margin-left: 3%;
+            }
+         }
+         & .rates__conditions {
+            @include textStyle($in, 16px, 400, 19.36px, #3F3F3F);
+         }
+         & ul {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20%;
+            & li {
+               display: flex;
+               flex-direction: column;
+               margin-bottom: 5%;
+               width: 80%;
+               & .tesis {
+                  display: flex;
+                  align-items: center;
+                  & img {
+                     margin-right: 3%;
+                  }
+                  & p {
+                     @include textStyle($in, 16px, 400, 19.36px, #3F3F3F);
+                  }
+               }
+               & .subcondition {
+                  @include textStyle($in, 12px, 400, 14.52px, #C1BABA);
+                  margin-left: 7%;
+                  margin-top: 3%;
+               }
+            }
+         }
+
+      }
+   }
+   & button {
+      display: block;
+      margin: 0 auto;
+      @include textStyle($in, 18px, 500, 21.78px, #fff);
+      padding: 1.2% 1%;
+      width: 14%;
+   }
+}
+
+// Blog  page
+
+// Blog
