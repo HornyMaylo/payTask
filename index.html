@@ -4,6 +4,10 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Project</title>
+   <link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+	/>
    <link rel="stylesheet" href="css/style.css">
    <script src="https://kit.fontawesome.com/eb322f32b6.js" crossorigin="anonymous"></script>
 </head>
@@ -76,11 +80,11 @@
          </div>
          <div class="desc__body">
             <div class="desc__item">
-               <div class="item__elem">
+               <div class="item__elem active work">
                   <h5>Доски</h5>
                   <p>Благодаря доскам Fractal задачи упорядовачиваются, а работа движется. Достаточно одного взгляда, чтобы увидеть все задачи, от запланированных до выполненных.</p>
                </div>
-               <div class="item__elem">
+               <div class="item__elem work">
                   <h5>Таблицы</h5>
                   <p>Благодаря доскам Fractal задачи упорядовачиваются, а работа движется. Достаточно одного взгляда, чтобы увидеть все задачи, от запланированных до выполненных.</p>
                </div>
@@ -90,7 +94,7 @@
                </div>
             </div>
             <div class="desc__item">
-               <img src="img/desc/dashboard.svg" alt="#">
+               <img id="desc__img" src="img/desc/dashboard_0.svg" alt="#">
             </div>
          </div>
       </div>
@@ -122,21 +126,37 @@
       <div class="container">
          <h1>Дальше — больше!</h1>
          <p>Мы развиваем Fractal, чтобы сделать его еще удобнее. В будущем вы сможете оценить новые возможности.</p>
-         <div class="slider__body">
-            <div class="slider__item">
-               <img src="img/slider/slide_1.svg" alt="">
-               <h4>Удобный календарь</h4>
+         <div class="slider__body swiper-container">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="slider__item">
+                     <img src="img/slider/slide_1.svg" alt="">
+                     <h4>Удобный календарь</h4>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="slider__item">
+                     <img src="img/slider/slide_2.svg" alt="">
+                     <h4>Расширение способов расчёта зарплаты</h4>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="slider__item">
+                     <img src="img/slider/slide_3.svg" alt="">
+                     <h4>Собственная база знаний и возможность организовать процесс обучения</h4>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="slider__item">
+                     <img src="img/slider/slide_4.svg" alt="">
+                     <h4>Выставление счетов клиентам</h4>
+                  </div>
+               </div>
             </div>
-            <div class="slider__item">
-               <img src="img/slider/slide_2.svg" alt="">
-               <h4>Расширение способов расчёта зарплаты</h4>
-            </div>
-            <div class="slider__item">
-               <img src="img/slider/slide_3.svg" alt="">
-               <h4>Собственная база знаний и возможность организовать процесс обучения</h4>
-            </div>
-            <img id="slider__btn" src="img/slider/btn.svg" alt="">
          </div>
+         <img class="right" src="img/slider/right.svg" alt="">
+         <img class="left" src="img/slider/left.svg" alt="">
+         <div class="swiper-scrollbar"></div>
       </div>
    </section>
    <footer>
@@ -242,5 +262,8 @@
          </div>
       </div>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/mainSlider.js"></script>
+   <script src="js/choose.js"></script>
 </body>
 </html>

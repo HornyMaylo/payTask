@@ -28,9 +28,12 @@ body {
 button {
    @include textStyle($in, 16px, 500, 19.36px, #fff);
    background-color: #2BB9FD;
-   border: 1px solid #2BB9FD;
+   border: 1px solid #fff;
    border-radius: 40px;
    padding: 4% 7%;
+   &:hover {
+      background: linear-gradient(90deg, #AA89D0 0%, #FFCC70 100%);
+   }
 }
 
 // Main page
@@ -91,6 +94,9 @@ header {
             background-color: transparent;
             border: 1px solid #2BB9FD;
             margin-right: 4%;
+            &:hover {
+               background: transparent;
+            }
          }
       }
    }
@@ -230,13 +236,50 @@ header {
    & .desc__body {
       display: flex;
       margin-top: 5%;
+      & .desc__item {
+         .animation {
+            animation: showImg 1s linear forwards;
+         }
+         @keyframes showImg {
+            from {
+               opacity: 0;
+            }
+            to {
+               opacity: 1;
+            }
+            }
+      }
       & .desc__item:first-child {
          width: 30.33%;
          margin-right: 10%;
          display: flex;
          flex-direction: column;
-         & .item__elem:first-child {
+         & .item__elem:nth-child(3) {
+            opacity: .25;
+            box-shadow: none;
+            color: #3F3F3F;
+         }
+         & .item__elem {
+            box-shadow: none;
+            opacity: .8;
+            margin-bottom: 5%;
+            padding: 3% 3% 3% 6%;
+            border-radius: 8px;
+            cursor: pointer;
+            & h5 {
+               @include textStyle($in, 16px, 500, 19.36px, #000);
+               margin-bottom: 2%;
+               width: 82%;
+            }
+            & p {
+               @include textStyle($in, 16px, 400, 19.36px, #000);
+               width: 94%;
+            }
+         }
+         & .active {
             position: relative;
+            opacity: 1;
+            box-shadow: 0px 2px 5px 2px #00000026;
             &::after {
                position: absolute;
                content: '';
@@ -247,31 +290,6 @@ header {
                width: 8px;
                background-color:#5D43AA;
                border-radius: 8px 0px 0px 8px;
-            }
-         }
-         & .item__elem:nth-child(2) {
-            opacity: .8;
-            box-shadow: none;
-            color: #3F3F3F;
-         }
-         & .item__elem:nth-child(3) {
-            opacity: .25;
-            box-shadow: none;
-            color: #3F3F3F;
-         }
-         & .item__elem {
-            box-shadow: 0px 2px 5px 2px #00000026;
-            margin-bottom: 5%;
-            padding: 3% 3% 3% 6%;
-            border-radius: 8px;
-            & h5 {
-               @include textStyle($in, 16px, 500, 19.36px, #000);
-               margin-bottom: 2%;
-               width: 82%;
-            }
-            & p {
-               @include textStyle($in, 16px, 400, 19.36px, #000);
-               width: 94%;
             }
          }
       }
@@ -341,9 +359,37 @@ header {
 // Slider
 
 .slider {
-   margin-top: 8%;
-   margin-bottom: 15%;
    margin: 8% 0 15%;
+   position: relative;
+   & .right {
+      position: absolute;
+      top: 60%;
+      left: 85%;
+      z-index: 1;
+      cursor: pointer;
+   }
+   & .left {
+      position: absolute;
+      top: 60%;
+      left: 12%;
+      z-index: 1;
+      cursor: pointer;
+   }
+   & .swiper-scrollbar {
+      position: absolute;
+      top: 120%;
+      left: 33%;
+      z-index: 1;
+      width: 58%;
+      cursor: pointer;
+      background-color: transparent;
+      & .swiper-scrollbar-drag {
+         height: 100%;
+         width: 300px !important;
+         background: #3F3F3F;
+         border-radius: 0 12px 12px 0;
+      }
+   }
    & h1 {
       @include textStyle($in, 36px, 600, 43.57px, #3F3F3F);
       text-align: center;
@@ -356,27 +402,21 @@ header {
       margin: 0 auto;
    }
    & .slider__body {
-      display: flex;
-      margin-top: 6%;
       position: relative;
-      &::after {
-         position: absolute;
-         top: 130%;
-         left: 25%;
-         content: '';
-         width: 299px;
-         height: 4px;
-         background-color: #3f3f3f;
-         z-index: 1;
-         border-radius: 8px 0 0 8px;
-      }
-      & #slider__btn {
-         position: absolute;
-         top: 35%;
-         left: 100%;
-         z-index: 1;
-         cursor: pointer;
-      }
+      margin-top: 6%;
+      overflow: hidden;
+      // overflow: hidden;
+      // &::after {
+      //    position: absolute;
+      //    top: 130%;
+      //    left: 25%;
+      //    content: '';
+      //    width: 299px;
+      //    height: 4px;
+      //    background-color: #3f3f3f;
+      //    z-index: 1;
+      //    border-radius: 8px 0 0 8px;
+      // }
       & .slider__item {
          width: 100%;
          display: flex;
